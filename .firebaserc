@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ingreso-egreso-app-2287e": {
+      "hosting": {
+        "force-seals": [
+          "ingreso-egreso-app-2287e"
+        ]
+      }
+    }
+  }
+}
