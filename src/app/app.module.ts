@@ -27,6 +27,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { environment } from '../environments/environment.prod';
+import { OrdenIngresoPipe } from './pipes/orden-ingreso.pipe';
+
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { environment } from '../environments/environment.prod';
     DetalleComponent,
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    OrdenIngresoPipe
   ],
   imports: [
     BrowserModule,
@@ -48,6 +52,7 @@ import { environment } from '../environments/environment.prod';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
+    ChartsModule,
     StoreModule.forRoot(appReducers),
     // Instrumentation must be imported after importing StoreModule (config is optional)
     StoreDevtoolsModule.instrument({
