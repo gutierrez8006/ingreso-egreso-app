@@ -35,7 +35,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.ingresosSubs.unsubscribe();
-    this.userSubs.unsubscribe();
+    this.ingresosSubs?.unsubscribe();
+    this.userSubs?.unsubscribe();
   }
 }
